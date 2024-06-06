@@ -15,4 +15,4 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Test the Docker image
-      run: docker build . --file Dockerfile --tag hello-world-rust &amp;&amp; docker run -v /var/run/docker.sock:/var/run/docker.sock aquasec/trivy image hello-world-rust:latest
+      run: docker build . --file Dockerfile --tag hello-world-rust && docker run -v /var/run/docker.sock:/var/run/docker.sock aquasec/trivy image hello-world-rust:latest
